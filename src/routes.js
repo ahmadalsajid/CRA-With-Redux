@@ -29,7 +29,7 @@ export default () => (
       {/*<Route exact path={'/'} render={(props)=><LoginContainer {...props}/>}/>*/}
       <Route exact path={'/login'} render={(props)=><LoginContainer {...props}/>}/>
       <PrivateRoute exact path={'/'} component={Home}/>
-      <Route exact path="/about-us" component={About} />
+      <PrivateRoute exact path="/about-us" component={About} />
       <Route component={PageNotFound}/>
     </Switch>
   </Router>

@@ -11,6 +11,7 @@ export default class Auth {
     localStorage.removeItem('jwt');
     localStorage.removeItem('email');
     localStorage.removeItem('access_token');
+    history.replace('/');
   }
 
   isAuthenticated() {

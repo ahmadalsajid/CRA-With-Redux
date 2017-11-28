@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavBar from '../../core/components/navbar';
 
 class HomeComponent extends Component {
 
@@ -9,6 +10,7 @@ class HomeComponent extends Component {
   render(){
     return (
       <div>
+        <NavBar/>
         <h1>Home</h1>
         <p>Count: {this.props.count}</p>
         <p>
